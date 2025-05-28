@@ -23,13 +23,13 @@ jobs:
     - name: Build Angular app
       run: npm run build --prod
 
-   - name: Debug secret value
-     run: |
-       if [ -n "${{ secrets.GHCR_PAT }}" ]; then
+    - name: Debug secret value
+      run: |
+        if [ -n "${{ secrets.GHCR_PAT }}" ]; then
           echo "Secret is: Present"
-       else
+        else
           echo "Secret is: Not Present"
-       fi
+        fi
 
 
     - name: Log in to GHCR
