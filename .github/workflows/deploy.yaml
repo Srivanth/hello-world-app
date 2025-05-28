@@ -45,7 +45,7 @@ jobs:
         docker build -t ghcr.io/revathibala/hello-world-app:latest .
         docker push ghcr.io/revathibala/hello-world-app:latest
 
-    # Uncomment if you want to deploy to ROSA
+    
     # - name: Install OpenShift CLI
     #   run: |
     #     curl -LO https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest/openshift-client-linux.tar.gz
@@ -59,4 +59,4 @@ jobs:
     # - name: Deploy to ROSA
     #   run: |
     #     oc apply -f deployment.yaml
-    #     oc apply -f service.yaml
+        
