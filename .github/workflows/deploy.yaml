@@ -38,7 +38,7 @@ jobs:
       with:
         registry: ghcr.io
         username: revathibala
-        password: ${{ secrets.GHCR_PAT }}
+        password: ${{ secrets.GHCR_PAT1 }}
 
     - name: Build and push Docker image
       run: |
