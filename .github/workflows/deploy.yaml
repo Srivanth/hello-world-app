@@ -26,7 +26,7 @@ jobs:
 
     - name: Debug secret value
       run: |
-        if [ -n "${{ secrets.GHCR_PAT }}" ]; then
+        if [ -n "${{ secrets.SECRET_SRI }}" ]; then
           echo "Secret is: Present"
         else
           echo "Secret is: Not Present"
