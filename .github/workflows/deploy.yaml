@@ -58,6 +58,6 @@ jobs:
         oc login --token=${{ secrets.ROSA_TOKEN }} --server=${{ secrets.ROSA_SERVER }}
 
     - name: Deploy to ROSA
-      run:
+      run: |
         oc delete -f deployment.yaml
         oc apply -f deployment.yaml
